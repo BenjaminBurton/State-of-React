@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
+// import Square from './Square';
+// import Board from './Board';
+// import Game from './Game';
 
 class Square extends Component {
-    state = {  } 
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: null,
+        };
+    }
     render() { 
         return (
-            <h1>VELSMARIAM</h1>
+            <button className="square" onClick={function() { console.log('click'); }}>
+                {this.props.value}
+            </button>
         );
     }
 }

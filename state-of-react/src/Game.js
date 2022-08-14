@@ -1,11 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import Board from "./Board";
 
 class Game extends Component {
-    render() { 
-        return (
-            <h1>Game Check</h1>
-        );
-    }
+  render() {
+    return (
+      <div className="game">
+        <div className="game-board">
+          <Board />
+        </div>
+        <div className="game-info">
+          {/* <div>{TODO}</div> */}
+          {/* <ol>TODO</ol> */}
+        </div>
+      </div>
+    );
+  }
 }
- 
+
 export default Game;
