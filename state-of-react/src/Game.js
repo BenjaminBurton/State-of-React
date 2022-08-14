@@ -1,3 +1,5 @@
+// IMPORTS ACROSS CLASS COMPONENTS
+
 import React, { Component } from "react";
 import Board from "./Board";
 
