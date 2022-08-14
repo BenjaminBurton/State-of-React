@@ -1,16 +1,16 @@
 // IMPORTS ACROSS CLASS COMPONENTS
 
 import React, { Component } from "react";
-import Square from "./Square";
+import Game from "./Game";
 // import Board from './Board';
-// import Game from './Game';
+// import Square from './Square';
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Square />
+        <Game />
       </div>
     );
   }

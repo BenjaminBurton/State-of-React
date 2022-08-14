@@ -6,19 +6,22 @@ import React, { Component } from "react";
 // import Game from './Game';
 
 class Square extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: null,
-    };
-  }
   render() {
     return (
-      <button className="square" onClick={() => this.setState({ value: "X" })}>
-        {this.state.value}
+      <button className="square" onClick={() => this.props.onClick()}>
+        {this.props.value}
       </button>
     );
   }
 }
+
+// ANOTHER VERSION OF THE FUNCTION 
+// function Square(props) {
+//   return (
+//     <button className="square" onClick={props.onClick}>
+//       {props.value}
+//     </button>
+//   );
+// }
 
 export default Square;
