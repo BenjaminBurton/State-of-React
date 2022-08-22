@@ -5,6 +5,7 @@ import React, { Component } from "react";
 // import Board from './Board';
 // import Game from './Game';
 
+
 class Square extends Component {
   render() {
     return (
