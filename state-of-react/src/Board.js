@@ -51,6 +51,8 @@ class Board extends Component {
   }
 }
 
+export default Board;
+
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -70,5 +72,3 @@ function calculateWinner(squares) {
   }
   return null;
 }
-
-export default Board;
